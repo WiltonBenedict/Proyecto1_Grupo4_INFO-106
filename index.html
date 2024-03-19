@@ -180,10 +180,10 @@
 
     <div class="card-group">
       <div class="card">
-        <img src="IMG/OFR1.png" class="card-img-top" alt="..." />
+        <img src="IMG/rack pesas.png" class="card-img-top" alt="..." />
         <div class="card-body" style="text-align: center">
-          <h5 class="card-title">Nombre Producto</h5>
-          <p class="card-text">Costo:</p>
+          <h5 class="card-title">Rack deportivo</h5>
+          <p class="card-text">Costo: 295,000 CRC</p>
           <button
             type="button"
             class="btn btn-primary"
@@ -198,10 +198,10 @@
         </div>
       </div>
       <div class="card">
-        <img src="IMG/OFR2.png" class="card-img-top" alt="..." />
+        <img src="IMG/rodilleras4.png" class="card-img-top" alt="..." />
         <div class="card-body" style="text-align: center">
-          <h5 class="card-title">Nombre Producto</h5>
-          <p class="card-text">Costo:</p>
+          <h5 class="card-title">Rodilleras</h5>
+          <p class="card-text">Costo: 15,000 CRC </p>
           <button
             type="button"
             class="btn btn-primary"
@@ -216,10 +216,10 @@
         </div>
       </div>
       <div class="card">
-        <img src="IMG/OFR3.png" class="card-img-top" alt="..." />
+        <img src="IMG/rodillo abdominal.webp" class="card-img-top" alt="..." />
         <div class="card-body" style="text-align: center">
-          <h5 class="card-title">Nombre Producto</h5>
-          <p class="card-text">Costo:</p>
+          <h5 class="card-title">Rodillo abdominal</h5>
+          <p class="card-text">Costo: 17,000 CRC </p>
           <button
             type="button"
             class="btn btn-primary"
@@ -234,6 +234,8 @@
         </div>
       </div>
     </div>
+
+
 
     <!--FOOTER-->
     <footer class="bg-body-tertiary text-center text-lg-start">
@@ -258,7 +260,13 @@
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
             <h5 class="text-uppercase">Grupo 4</h5>
 
-            <p>Integrantes:</p>
+            <p>Integrantes: Saymond Vargas Cordero
+            </p>
+            <p>Anthony Vásquez Rojas </p>
+            <p>              Maria Jose Rodríguez Araya</p>
+            <p>              Wilton Benedict Castillo
+            </p>
+            <p> Westley Levey Murillo<</p>
           </div>
           <!--Grid column-->
         </div>
@@ -349,7 +357,10 @@
                   </button>
                 </div>
               </div>
-              <div style="height: 70%; width: 70%">
+
+              <button onclick="toggleContent()" class="btn btn-light" id="zoom2"><img id="zoom" src="IMG/zoom.png" alt=""></button>
+
+              <div  id="toggleContent" style="height: 70%; width: 70%">
                 <p>Precio: 460,500 CRC</p>
                 <p>Disponibilidad: 6</p>
                 <p>Descripcion: Smartwatch especializado en golf.</p>
@@ -442,7 +453,8 @@
                   </button>
                 </div>
               </div>
-              <div style="height: 70%; width: 70%">
+              <button onclick="toggleContent()" class="btn btn-light" id="zoom2"><img id="zoom" src="IMG/zoom.png" alt=""></button>
+              <div style="height: 70%; width: 70%" id="toggleContent">
                 <p>Precio: 105,900 CRCC</p>
                 <p>Disponibilidad: 6</p>
                 <p>
@@ -539,7 +551,8 @@
                   </button>
                 </div>
               </div>
-              <div style="height: 70%; width: 70%">
+              <button onclick="toggleContent()" class="btn btn-light" id="zoom2"><img id="zoom" src="IMG/zoom.png" alt=""></button>
+              <div id="toggleContent" style="height: 70%; width: 70%">
                 <p>Precio: 85,200 CRC CRC</p>
                 <p>Disponibilidad: 2</p>
                 <p>
@@ -564,278 +577,281 @@
 
     <!--MODALS NUEVOS PRODUCTOS-->
 
-    <!-- Producto 01 -->
-    <div
-      class="modal fade"
-      id="Modal4"
-      tabindex="-1"
-      aria-labelledby="Modal4"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="Modal4">Nombre Producto</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <section class="layout">
-              <div style="height: 70%; width: 70%">
-                <div
-                  id="ModalCarousel4"
-                  class="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <a href="IMG/OFR1A.png">
-                        <img src="IMG/OFR1A.png" class="d-block w-100 zoom" />
-                      </a>
-                      <!-- <img src="IMG/OFR1A.png" class="d-block w-100 zoom" id="zoom" alt="..."> -->
-                    </div>
-                    <div class="carousel-item">
-                      <a href="IMG/OFR1B.png">
-                        <img src="IMG/OFR1B.png" class="d-block w-100 zoom" />
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="IMG/OFR1C.png">
-                        <img src="IMG/OFR1C.png" class="d-block w-100 zoom" />
-                      </a>
-                    </div>
-                  </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#ModalCarousel4"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#ModalCarousel4"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+  <!-- Producto 01 -->
+  <div
+  class="modal fade"
+  id="Modal4"
+  tabindex="-1"
+  aria-labelledby="Modal4"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Modal4">Rack deportivo</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <section class="layout">
+          <div style="height: 70%; width: 70%">
+            <div
+              id="ModalCarousel4"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="IMG/rack deportivo1.png">
+                    <img src="IMG/rack deportivo1.png" class="d-block w-100 zoom" />
+                  </a>
+                  <!-- <img src="IMG/OFR1A.png" class="d-block w-100 zoom" id="zoom" alt="..."> -->
+                </div>
+                <div class="carousel-item">
+                  <a href="IMG/rack deportivo2.png">
+                    <img src="IMG/rack deportivo2.png" class="d-block w-100 zoom" />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="IMG/rack deportivo3.png">
+                    <img src="IMG/rack deportivo3.png" class="d-block w-100 zoom" />
+                  </a>
                 </div>
               </div>
-              <div style="height: 70%; width: 70%">
-                <p>Precio:</p>
-                <p>Disponibilidad:</p>
-                <p>Descripcion:</p>
-              </div>
-            </section>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#ModalCarousel4"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#ModalCarousel4"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              cerrar
-            </button>
+          <button onclick="toggleContent()" class="btn btn-light" id="zoom2"><img id="zoom" src="IMG/zoom.png" alt=""></button>
+          <div id="toggleContent" style="height: 70%; width: 70%">
+            <p>Precio: 295,000 </p>
+            <p>Disponibilidad: En tienda física </p>
+            <p>Descripcion: Rack con capacidad de 320 kg en peso. Hecho en hierro con gomas de hule para brindar mayor comodidad.</p>
           </div>
-        </div>
+        </section>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          cerrar
+        </button>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- Producto 02 -->
-    <div
-      class="modal fade"
-      id="Modal5"
-      tabindex="-1"
-      aria-labelledby="Modal5"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="Modal5">Nombre Producto</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <section class="layout">
-              <div style="height: 70%; width: 70%">
-                <div
-                  id="ModalCarousel5"
-                  class="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <a href="IMG/OFR2A.png">
-                        <img src="IMG/OFR2A.png" class="d-block w-100 zoom" />
-                      </a>
-                      <!-- <img src="IMG/OFR1A.png" class="d-block w-100 zoom" id="zoom" alt="..."> -->
-                    </div>
-                    <div class="carousel-item">
-                      <a href="IMG/OFR2B.png">
-                        <img src="IMG/OFR2B.png" class="d-block w-100 zoom" />
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="IMG/OFR2C.png">
-                        <img src="IMG/OFR2C.png" class="d-block w-100 zoom" />
-                      </a>
-                    </div>
-                  </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#ModalCarousel5"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#ModalCarousel5"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+<!-- Producto 02 -->
+<div
+  class="modal fade"
+  id="Modal5"
+  tabindex="-1"
+  aria-labelledby="Modal5"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Modal5">Rodilleras Ocean Fitness FIT</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <section class="layout">
+          <div style="height: 70%; width: 70%">
+            <div
+              id="ModalCarousel5"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="IMG/rodilleras1.png">
+                    <img src="IMG/rodilleras1.png" class="d-block w-100 zoom" />
+                  </a>
+                  <!-- <img src="IMG/OFR1A.png" class="d-block w-100 zoom" id="zoom" alt="..."> -->
+                </div>
+                <div class="carousel-item">
+                  <a href="IMG/rodilleras2.png">
+                    <img src="IMG/rodilleras2.png" class="d-block w-100 zoom" />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="IMG/rodilleras3.png">
+                    <img src="IMG/rodilleras3.png" class="d-block w-100 zoom" />
+                  </a>
                 </div>
               </div>
-              <div style="height: 70%; width: 70%">
-                <p>Precio:</p>
-                <p>Disponibilidad:</p>
-                <p>Descripcion:</p>
-              </div>
-            </section>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#ModalCarousel5"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#ModalCarousel5"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              cerrar
-            </button>
+          <button onclick="toggleContent()" class="btn btn-light" id="zoom2"><img id="zoom" src="IMG/zoom.png" alt=""></button>
+          <div id="toggleContent"  style="height: 70%; width: 70%">
+            <p>Precio: 15,000 CRC </p>
+            <p>Disponibilidad: Disponible 5 unidades </p>
+            <p>Descripcion: Rodilleras con microfibra y textura 3D para proporcionar una mejor compresión de los tejidos y ofrecer mayor segurirar. Ideales para el cuido de la rodilla.</p>
           </div>
-        </div>
+        </section>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          cerrar
+        </button>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- Producto 03 -->
-    <div
-      class="modal fade"
-      id="Modal6"
-      tabindex="-1"
-      aria-labelledby="Modal6"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="Modal6">Nombre Producto</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <section class="layout">
-              <div style="height: 70%; width: 70%">
-                <div
-                  id="ModalCarousel6"
-                  class="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <a href="IMG/OFR3A.png">
-                        <img src="IMG/OFR3A.png" class="d-block w-100 zoom" />
-                      </a>
-                      <!-- <img src="IMG/OFR1A.png" class="d-block w-100 zoom" id="zoom" alt="..."> -->
-                    </div>
-                    <div class="carousel-item">
-                      <a href="IMG/OFR3B.png">
-                        <img src="IMG/OFR3B.png" class="d-block w-100 zoom" />
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="IMG/OFR3C.png">
-                        <img src="IMG/OFR3C.png" class="d-block w-100 zoom" />
-                      </a>
-                    </div>
-                  </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#ModalCarousel6"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#ModalCarousel6"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+<!-- Producto 03 -->
+<div
+  class="modal fade"
+  id="Modal6"
+  tabindex="-1"
+  aria-labelledby="Modal6"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Modal6">Rodillo abdominal</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <section class="layout">
+          <div style="height: 70%; width: 70%">
+            <div
+              id="ModalCarousel6"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="IMG/rodillo1.png">
+                    <img src="IMG/rodillo1.png" class="d-block w-100 zoom" />
+                  </a>
+                  <!-- <img src="IMG/OFR1A.png" class="d-block w-100 zoom" id="zoom" alt="..."> -->
+                </div>
+                <div class="carousel-item">
+                  <a href="IMG/rodillo2.png">
+                    <img src="IMG/rodillo2.png" class="d-block w-100 zoom" />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="IMG/rodillo3.png">
+                    <img src="IMG/rodillo3.png" class="d-block w-100 zoom" />
+                  </a>
                 </div>
               </div>
-              <div style="height: 70%; width: 70%">
-                <p>Precio:</p>
-                <p>Disponibilidad:</p>
-                <p>Descripcion:</p>
-              </div>
-            </section>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#ModalCarousel6"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#ModalCarousel6"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              cerrar
-            </button>
+          <button onclick="toggleContent()" class="btn btn-light" id="zoom2"><img id="zoom" src="IMG/zoom.png" alt=""></button>
+          <div id="toggleContent" style="height: 70%; width: 70%">
+            <p>Precio: 17,000 CRC</p>
+            <p>Disponibilidad: 8 unidades </p>
+            <p>Descripcion: Rodillo abdominal ideal para el crecimiento y estimulación de los musculos abdominales,</p>
           </div>
-        </div>
+        </section>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          cerrar
+        </button>
       </div>
     </div>
+  </div>
+</div>
 
     <!-- Referencia a script de JS, Bootstrap, jQuery-->
     <script

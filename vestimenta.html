@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="CSS/styles.css" />
     <link rel="stylesheet" href="CSS/magnify.css" />
+
   </head>
   <body>
     <!--HEADER-->
@@ -66,11 +67,11 @@
     <!--CARD GROUP-->
     <div class="card-group">
       <div class="card">
-        <img src="IMG/OFR1.png" class="card-img-top" alt="..." />
+        <img src="IMG/barca.png" class="card-img-top" alt="..." />
         <div class="card-body" style="text-align: center;">
-          <h5 class="card-title">Nombre Producto/h5>
+          <h5 class="card-title">Camiseta FC BARCELONA </h5>
           <p class="card-text">
-            Costo: 
+            Costo: 36,000 CRC
           </p>
           <button
             type="button"
@@ -86,11 +87,11 @@
         </div>
       </div>
       <div class="card">
-        <img src="IMG/OFR2.png" class="card-img-top" alt="..." />
+        <img src="IMG/bayern.png" class="card-img-top" alt="..." />
         <div class="card-body" style="text-align: center;">
-          <h5 class="card-title">Nombre Producto/h5>
+          <h5 class="card-title">Camiseta FC Bayern Múnich </h5>
           <p class="card-text">
-            Costo: 
+            Costo: 35,000 CRC
           </p>
           <button
             type="button"
@@ -106,11 +107,11 @@
         </div>
       </div>
       <div class="card">
-        <img src="IMG/OFR3.png" class="card-img-top" alt="..." />
+        <img src="IMG/city.png" class="card-img-top" alt="..." />
         <div class="card-body" style="text-align: center;">
-          <h5 class="card-title">Nombre Producto</h5>
+          <h5 class="card-title">Camiseta Manchester City</h5>
           <p class="card-text">
-            Costo: 
+            Costo: 35,000 CRC
           </p>
           <button
             type="button"
@@ -135,11 +136,9 @@
         <div class="row">
           <!--Grid column-->
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">recomendaciones:</h5>
+            <h5 class="text-uppercase">recomendaciones(Proximamente):</h5>
 
-            <iframe width="420" height="315"
-            src="https://www.youtube.com/embed/gp1DcvVtyf4?si=_JQ7qVs5XQ-VNvhB">
-            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GG6GBtgUhFA?si=uaJp2uWlHx4FgwSL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <!--Grid column-->
 
@@ -147,10 +146,18 @@
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
             <h5 class="text-uppercase">Grupo 4</h5>
 
-            <p>Integrantes: </p>
+            <p>Integrantes: Saymond Vargas Cordero
+            </p>
+            <p>Anthony Vásquez Rojas </p>
+            <p>              Maria Jose Rodríguez Araya</p>
+            <p>              Wilton Benedict Castillo
+            </p>
+            <p> Westley Levey Murillo<</p>
+
           </div>
           <!--Grid column-->
         </div>
+
         <!--Grid row-->
       </div>
       <!-- Grid container -->
@@ -179,7 +186,7 @@
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="Modal1">Nombre Producto</h5>
+            <h5 class="modal-title" id="Modal1">Camiseta FC BARCELONA</h5>
             <button
               type="button"
               class="btn-close"
@@ -193,19 +200,19 @@
                 <div id="ModalCarousel" class="carousel slide" data-bs-ride="carousel" >
                   <div class="carousel-inner" >
                     <div class="carousel-item active">
-                      <a href="IMG/OFR1A.png">
-                        <img src="IMG/OFR1A.png" class="d-block w-100 zoom">
+                      <a href="IMG/barca.png">
+                        <img src="IMG/barca.png" class="d-block w-100 zoom">
                       </a>
                       <!-- <img src="IMG/OFR1A.png" class="d-block w-100 zoom" id="zoom" alt="..."> -->
                     </div>
                     <div class="carousel-item">
-                      <a href="IMG/OFR1B.png">
-                        <img src="IMG/OFR1B.png" class="d-block w-100 zoom">
+                      <a href="IMG/barca.png">
+                        <img src="IMG/barca.png" class="d-block w-100 zoom">
                       </a>
                     </div>
                     <div class="carousel-item">
-                      <a href="IMG/OFR1C.png">
-                        <img src="IMG/OFR1C.png" class="d-block w-100 zoom">
+                      <a href="IMG/barca.png">
+                        <img src="IMG/barca.png" class="d-block w-100 zoom">
                       </a>
                     </div>
                   </div>
@@ -220,10 +227,12 @@
                 </div>
               
               </div>
-              <div style="height: 70%; width: 70%;">
-                <p>Precio: </p>
-                <p>Disponibilidad: </p>
-                <p>Descripcion: </p>
+              <button onclick="toggleContent()" class="btn btn-light" id="zoom2"><img id="zoom" src="IMG/zoom.png" alt=""></button>
+  
+              <div id="toggleContent" style="height: 70%; width: 70%;">
+                <p>Precio: 36,000 CRC </p>
+                <p>Disponibilidad: EN STOCK </p>
+                <p>Descripcion:Camiseta oficial del FC BARCELONA  </p>
               </div>
             </section>
 
@@ -252,7 +261,7 @@
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="Modal2">Nombre Producto</h5>
+            <h5 class="modal-title" id="Modal2">Camiseta FC Bayern Múnich </h5>
             <button
               type="button"
               class="btn-close"
@@ -266,19 +275,19 @@
                 <div id="ModalCarousel2" class="carousel slide" data-bs-ride="carousel" >
                   <div class="carousel-inner" >
                     <div class="carousel-item active">
-                      <a href="IMG/OFR2A.png">
-                        <img src="IMG/OFR2A.png" class="d-block w-100 zoom">
+                      <a href="IMG/bayern.png">
+                        <img src="IMG/bayern.png" class="d-block w-100 zoom">
                       </a>
                       <!-- <img src="IMG/OFR1A.png" class="d-block w-100 zoom" id="zoom" alt="..."> -->
                     </div>
                     <div class="carousel-item">
-                      <a href="IMG/OFR2B.png">
-                        <img src="IMG/OFR2B.png" class="d-block w-100 zoom">
+                      <a href="IMG/bayern.png">
+                        <img src="IMG/bayern.png" class="d-block w-100 zoom">
                       </a>
                     </div>
                     <div class="carousel-item">
-                      <a href="IMG/OFR2C.png">
-                        <img src="IMG/OFR2C.png" class="d-block w-100 zoom">
+                      <a href="IMG/bayern.png">
+                        <img src="IMG/bayern.png" class="d-block w-100 zoom">
                       </a>
                     </div>
                   </div>
@@ -293,10 +302,12 @@
                 </div>
               
               </div>
-              <div style="height: 70%; width: 70%;">
-                <p>Precio: </p>
-                <p>Disponibilidad: </p>
-                <p>Descripcion:  </p>
+              <button onclick="toggleContent()" class="btn btn-light" id="zoom2"><img id="zoom" src="IMG/zoom.png" alt=""></button>
+  
+              <div id="toggleContent" style="height: 70%; width: 70%;">
+                <p>Precio: 35,000 CRC </p>
+                <p>Disponibilidad: AGOTADO  </p>
+                <p>Descripcion:Camiseta oficial FC Bayern Múnich</p>
               </div>
             </section>
 
@@ -325,7 +336,7 @@
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="Modal3">Nombre Producto</h5>
+          <h5 class="modal-title" id="Modal3">Camiseta Oficial del Manchester City</h5>
           <button
             type="button"
             class="btn-close"
@@ -339,19 +350,19 @@
               <div id="ModalCarousel3" class="carousel slide" data-bs-ride="carousel" >
                 <div class="carousel-inner" >
                   <div class="carousel-item active">
-                    <a href="IMG/OFR3A.png">
-                      <img src="IMG/OFR3A.png" class="d-block w-100 zoom">
+                    <a href="IMG/city.png">
+                      <img src="IMG/city.png" class="d-block w-100 zoom">
                     </a>
                     <!-- <img src="IMG/OFR1A.png" class="d-block w-100 zoom" id="zoom" alt="..."> -->
                   </div>
                   <div class="carousel-item">
-                    <a href="IMG/OFR3B.png">
-                      <img src="IMG/OFR3B.png" class="d-block w-100 zoom">
+                    <a href="IMG/city.png">
+                      <img src="IMG/city.png" class="d-block w-100 zoom">
                     </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="IMG/OFR3C.png">
-                      <img src="IMG/OFR3C.png" class="d-block w-100 zoom">
+                    <a href="IMG/city.png">
+                      <img src="IMG/city.png" class="d-block w-100 zoom">
                     </a>
                   </div>
                 </div>
@@ -366,10 +377,12 @@
               </div>
             
             </div>
-            <div style="height: 70%; width: 70%;">
-              <p>Precio: </p>
-              <p>Disponibilidad: </p>
-              <p>Descripcion:  .</p>
+            <button onclick="toggleContent()" class="btn btn-light" id="zoom2"><img id="zoom" src="IMG/zoom.png" alt=""></button>
+
+            <div id="toggleContent" style="height: 70%; width: 70%;">
+              <p>Precio: 35,000 CRC </p>
+              <p>Disponibilidad: EN STOCK </p>
+              <p>Descripcion:Camiseta oficial del Manchester City  </p>
             </div>
           </section>
 
